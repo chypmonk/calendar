@@ -1,0 +1,387 @@
+body {
+    font-size: 16px;
+    margin: 0 auto;     
+    box-sizing: border-box;     
+    color: #666;
+}
+
+h1, h2, h3 ,h4 {
+    text-align: center;    
+    color: #4a4682;
+}
+
+h1, h2 {
+    color: purple;
+}
+
+
+h4 {   
+    text-align: left;
+}
+    
+a {   
+    color:#652c77;
+    text-decoration: none;
+}
+a:hover {
+  color: darkmagenta;
+}
+
+button {
+    border:none;
+    background-color: white;
+    
+}
+label {
+    color: purple;   
+}
+b {
+    color: black;
+    font-size: .8em;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+}
+textarea, input {  
+    max-width: 100%;  
+    vertical-align: bottom;  
+    font-size: 1em;
+    font-family: "Lato", sans-serif;  
+    box-sizing: border-box;
+    border: 1px solid #4a4682;   
+    padding: 5px;
+    background-color: #eee;
+}
+
+/** OUTERWRAP */
+.outerwrap {   
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; 
+    width: 1200px;
+    box-sizing: border-box;  
+    padding: 10px;
+    text-align: center;
+   
+   }
+/** Header */
+.header {
+    margin-bottom: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+
+
+
+/**COLUMNS */
+.full-column {
+    width: 100%;
+    text-align: left;
+    margin: auto;
+}
+.content-column, .sidebar-column, .half-column, .third-column, .two-thirds-column{      
+    display: inline-block;
+    text-align: left;     
+    box-sizing: border-box; 
+    vertical-align: top;
+    padding: 0 20px;
+    max-width: 100%;
+}
+
+.content-column {
+    width: 75%;
+    padding:  0 20px; 
+}
+.sidebar-column {
+    width: 25%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+.third-column {
+    width: 30%;
+}
+.third-column a {
+    text-decoration: underline;
+}
+.two-thirds-column {
+    width: 66%;
+}
+
+.half-column {       
+    box-sizing: border-box;
+    display: inline-block;    
+    vertical-align: top; 
+    max-width: 100%;
+    width: 50%;  
+    padding: 0 20px;
+}
+
+.centered {
+    text-align: center;
+}
+ 
+/** CALENDAR */
+.archived-date-box {
+    width: 50px;
+    border: 1px solid #bbb;
+    padding: 5px 8px;
+    display: inline-block;
+    
+}
+
+.monthyear {  
+    margin: auto;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.monthyearinner {
+    width: 180px;
+    display: inline-block;
+}
+
+
+.calendar-grid {
+    background-color: #ddd;
+    padding: 20px 10px;
+}
+.inner-grid {
+    display: block;
+    text-align: left;
+    margin: auto; 
+    padding: 0 ;   
+    overflow: hidden;
+    border-bottom: 1px solid black;
+   
+}
+ .dow-cell {  
+    display: inline-block;  
+    width: 14.28%;
+    box-sizing: border-box;
+    vertical-align: top;   
+    line-height: 120%;  
+    margin:  0;
+    position: relative;
+}
+.calendar-cell {
+    font-family: "Roboto", sans-serif;
+    display: inline-block;  
+    width: 14.28%;
+    box-sizing: border-box;
+    vertical-align: top;   
+    line-height: 120%;    
+    min-height: 130px;
+    padding: 5px;
+    background-color: #ddd;
+    border-top: 1px solid  #bbb;  
+    text-align: left;
+    border: 1px solid #bbb;
+}
+.calendar-cell p {
+    margin: 0;
+    line-height: 110%;
+    font-family: 'Mulish', sans-serif;
+    font-size: .9em;    
+}
+.highlight {
+    background-color: pink;
+}
+a.day-number {
+   
+    padding: 3px;
+    margin: 3px;
+    box-sizing: border-box;
+    display: block;
+    margin: 3px 0;
+   
+}
+.event-cell{   
+    font-family: "Roboto", sans-serif;
+    border-radius: 3px;
+    border: 1px solid #bbb;
+    margin: 0 auto 6px auto;   
+    line-height: 120%;
+    color: black;   
+    box-sizing: border-box;
+}
+
+.nav-left,  .nav-right {   
+    display: inline-block;
+  
+}
+
+
+/** EVENT PAGES */
+.event-box {
+   padding: 20px;
+   text-align: left;
+   margin: 10px auto;
+    border: 1px solid #bbb;
+}
+.event-box h2, .add-update-event h2 {
+    text-align: left;
+    font-size: 18px;
+    color: black;
+}
+
+.calendar-grid .event-box {
+    padding: 3px;
+}
+/** EDIT CALENDAR */
+.date-selection-box  {
+    padding: 10px;
+   margin: 10px auto;
+    text-align: center;
+    border: 1px solid #bbb;
+   
+}
+.date-selection-box .half-column {
+    width: 45%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 5px;
+}
+.date-selection-day-cell, .date-selection-dow-cell {  
+    display: inline-block;  
+    width: 14.28%;
+    box-sizing: border-box;
+    vertical-align: top;   
+    line-height: 120%;  
+    margin:  0;
+    position: relative;
+}
+
+.date-selection-day-cell {
+    font-family: "Roboto", sans-serif;
+    height: 50px;
+    border: 1px solid black;  
+    width: 30px;
+    text-align: center;
+    font-size:  .8em;
+}
+
+.date-selection-dow-cell {
+    min-height: 30px;
+    font-size: .8em;
+    padding-top: 5px;
+}
+
+.checkbox-date-selection {
+    margin: 0 5px;       
+}
+
+.yearly-date-cell {
+    font-family: "Roboto", sans-serif;
+    height: 40px;
+    border: 1px solid black;  
+    width: 27px;
+    text-align: center;
+    font-size:  .8em;
+     box-sizing: border-box;
+    vertical-align: top;   
+    line-height: 120%;  
+    margin:  0;
+    display: inline-block;
+}
+
+
+.error {
+    color: red;
+}
+a.adminbutton,  input.submitbutton, .toggle-banner {
+    color: white;
+    padding: 5px 8px;       
+    margin: 10px auto; 
+    text-decoration: none;
+    vertical-align: top;
+    font-weight: bold;
+    background-color: #4a4682;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 14px;
+    display: inline-block;
+    box-sizing: border-box;
+    max-width: 100%;
+    border: 1px solid #bbb;
+   
+}
+input.submitbutton {
+    background-color: darkmagenta;
+}
+
+
+ button.toggle-banner2, button.toggle-banner1 {  
+    box-sizing: border-box;
+    cursor: pointer;
+    max-width: 100%;    
+    text-align: center;
+    margin: 10px auto;  
+    font-size: 16px;
+    border-radius: 2px;
+   width: 160px;
+    background-color: #ddd;    
+    border: 1px solid #bbb;
+    padding: 7px 12px;
+    font-size: .9em;
+    color: black;
+}
+button.toggle-banner2 {
+    background-color: pink;
+}
+.print-calendar a.nav-left, .print-calendar a.nav-right {
+    display:none;
+}
+
+.print-calendar .calendar-grid, .print-calendar .calendar-cell {
+    background-color: white;
+}
+
+
+/**  */
+/**  BREAKPOINTS */
+/**  */
+@media print {
+  .labelpage {
+      page-break-before: always;
+   }
+}
+
+@media only screen and (max-width: 800px) {
+     body {
+        font-size: 14px;
+    }
+    
+    .content-column, .sidebar-column, .third-column, .two-thirds-column, .half-column {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .calendar-cell, .calendar-cell a {
+        font-size: .8em;
+    }
+    
+}
+@media only screen and (max-width: 600px) {   
+    
+    .calendar-cell, .calendar-cell a {
+        font-size:  8px;
+        line-height: 90%;
+    }
+    .calendar-cell {
+       padding: 2px;
+        min-height: 100px;
+    }
+    .event-cell {
+        padding: 0;      
+        line-height: 90%;
+        font-size: 8px;
+    }
+     .outerwrap.home {
+        padding: 0;
+    }
+    
+}
+
